@@ -33,7 +33,7 @@ directory containing a non-shallow clone of the repository being deployed:
 docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-image dokku-deploy
 
 # unlock
-docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-image dokku-unlock
+docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-imapatch-1ge dokku-unlock
 ```
 
 ## Configuration
@@ -71,7 +71,7 @@ The following environment variables are supported:
   - required: false
   - default: ''
 - `SSH_PRIVATE_KEY`:
-  - description: A private SSH key that has push acces to your Dokku instance
+  - description: A private SSH key that has push access to your Dokku instance
   - required: true
 
 ## Building
