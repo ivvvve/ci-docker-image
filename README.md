@@ -33,7 +33,7 @@ directory containing a non-shallow clone of the repository being deployed:
 docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-image dokku-deploy
 
 # unlock
-docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-imapatch-1ge dokku-unlock
+docker run --rm -v="$PWD:/app" --env-file=.env dokku/ci-docker-image dokku-unlock
 ```
 
 ## Configuration
